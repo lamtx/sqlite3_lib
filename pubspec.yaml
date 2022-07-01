@@ -1,0 +1,33 @@
+name: sqlite3_lib
+description: Embedded sqlite3 library for Flutter apps.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=2.18.0-232.0.dev <3.0.0'
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: erika.app.sqlite3_lib
+        pluginClass: Sqlite3LibPlugin
+      ios:
+        pluginClass: Sqlite3LibPlugin
+      linux:
+        pluginClass: Sqlite3LibPlugin
+      macos:
+        pluginClass: Sqlite3LibPlugin
+      windows:
+        pluginClass: Sqlite3LibPluginCApi
